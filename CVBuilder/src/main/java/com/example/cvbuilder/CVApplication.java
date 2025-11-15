@@ -12,7 +12,7 @@ public class CVApplication extends Application {
     public void start(Stage stage) throws IOException {
         System.setProperty("prism.lcdtext", "false");
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("preview.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 534, 680);
+        Scene scene = new Scene(fxmlLoader.load(), 560, 686);
         //String css = this.getClass().getResource("/styles/create.css").toExternalForm();
         //scene.getStylesheets().add(css);
         stage.setTitle("Hello!");

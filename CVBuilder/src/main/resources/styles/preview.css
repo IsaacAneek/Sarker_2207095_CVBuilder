@@ -47,6 +47,16 @@ HBox{
     -fx-padding: 0 30 0 30;
 }
 
+#vboxUserDetails .label{
+    -fx-background-color: #2f709f;
+    -fx-font-size: 13px;
+    -fx-padding: 0 4 0 4;
+}
+
+#vboxUserDetails{
+    -fx-padding: 0 0 0 20;
+}
+
 .progress-bar{
     -fx-min-width: 100;
     -fx-control-inner-background: #282831;
