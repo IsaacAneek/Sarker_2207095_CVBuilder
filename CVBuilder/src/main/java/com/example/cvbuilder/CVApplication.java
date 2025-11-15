@@ -12,8 +12,8 @@ public class CVApplication extends Application {
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("create.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 480, 640);
-        String css = this.getClass().getResource("/styles/create.css").toExternalForm();
-        scene.getStylesheets().add(css);
+        //String css = this.getClass().getResource("/styles/create.css").toExternalForm();
+        //scene.getStylesheets().add(css);
         stage.setTitle("Hello!");
         stage.setResizable(false);
         stage.setScene(scene);

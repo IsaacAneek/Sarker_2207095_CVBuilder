@@ -124,7 +124,7 @@
                      <children>
                         <Label fx:id="title" text="Profile" />
                         <Label text="Description" />
-                        <TextField />
+                        <TextField minHeight="120.0" />
                      </children>
                   </VBox>
                   <VBox prefHeight="279.0" prefWidth="407.0">
@@ -185,7 +185,7 @@
                         <VBox prefHeight="83.0" prefWidth="407.0">
                            <children>
                               <Label text="Description" />
-                              <TextField />
+                              <TextField minHeight="120.0" />
                            </children>
                         </VBox>
                      </children>
