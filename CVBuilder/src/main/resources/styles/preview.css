@@ -1,0 +1,38 @@
+.root{
+
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('fonts/Poppins/Poppins-Regular.ttf');
+}
+
+#imageStackPane{
+    -fx-border-radius: 50%;
+    -fx-background-radius: 50%;
+    -fx-border-color: white;
+    -fx-border-width: 4px;
+    -fx-border-style: solid;
+    -fx-alignment: center;
+}
+
+#userSummary{
+    -fx-background-color: #2f709f;
+    -fx-border-color: white;
+    -fx-border-width: 10px;
+    -fx-border-style: solid;
+}
+
+.label{
+    -fx-font-family: 'Poppins', sans-serif;
+    -fx-text-fill: white;
+    -fx-font-weight: 0;
+}
+
+#titleName{
+    -fx-font-size: 27;
+}
+
+HBox{
+    -fx-spacing: 3px;
+}

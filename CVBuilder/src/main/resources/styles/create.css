@@ -19,6 +19,16 @@ VBox{
     -fx-alignment: CENTER_LEFT;
 }
 
+.text-area{
+    -fx-padding: -32 -45 -32 -30;
+    -fx-min-height: 120;
+    -fx-wrap-text: true;
+}
+
+.text-area .content{
+    -fx-background-color: #dfdfe4;
+}
+
 HBox{
     -fx-spacing: 10;
 }
@@ -26,15 +36,18 @@ HBox{
 GridPane {
     -fx-hgap: 10;
     -fx-vgap: 20;
+    -fx-padding: 10px 0 15px 0;
 }
 
 .text-field{
     -fx-background-color: #dfdfe4;
     /*-fx-background-radius: 0em;*/
+    -fx-alignment: TOP_LEFT;
 }
 
 .label{
     -fx-font-family: Poppins, sans-serif;
+    -fx-font-smoothing-type: gray;
 }
 
 ImageViewer{
@@ -50,7 +63,7 @@ ImageViewer{
 
 .scroll-bar:vertical .thumb{
     -fx-background-color: #dfdfe4;
-    -fx-background-radius: 0em;
+    -fx-background-radius: 2;
 }
 
 #title{

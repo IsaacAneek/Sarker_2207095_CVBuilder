@@ -10,8 +10,9 @@ import java.io.IOException;
 public class CVApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
+        System.setProperty("prism.lcdtext", "false");
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("create.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 480, 640);
+        Scene scene = new Scene(fxmlLoader.load(), 534, 640);
         //String css = this.getClass().getResource("/styles/create.css").toExternalForm();
         //scene.getStylesheets().add(css);
         stage.setTitle("Hello!");

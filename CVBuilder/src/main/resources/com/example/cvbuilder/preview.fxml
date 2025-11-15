@@ -1,14 +1,132 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.cvbuilder.previewController"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane prefHeight="640.0" prefWidth="560.0" stylesheets="@../../../styles/preview.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cvbuilder.previewController">
+   <children>
+      <HBox layoutY="-1.0" prefHeight="640.0" prefWidth="560.0">
+         <children>
+            <VBox prefHeight="640.0" prefWidth="190.0" style="-fx-background-color: black;">
+               <children>
+                  <VBox prefHeight="496.0" prefWidth="190.0">
+                     <VBox.margin>
+                        <Insets top="300.0" />
+                     </VBox.margin>
+                     <children>
+                        <Label text="SKILLS" />
+                        <Label text="Label" />
+                        <ProgressBar prefWidth="200.0" progress="0.0" />
+                        <Label layoutX="10.0" layoutY="27.0" text="Label" />
+                        <ProgressBar layoutX="10.0" layoutY="44.0" prefWidth="200.0" progress="0.0" />
+                        <Label layoutX="10.0" layoutY="44.0" text="Label" />
+                        <ProgressBar layoutX="10.0" layoutY="130.0" prefWidth="200.0" progress="0.0" />
+                        <Label layoutX="10.0" layoutY="61.0" text="Label" />
+                        <ProgressBar layoutX="10.0" layoutY="148.0" prefWidth="200.0" progress="0.0" />
+                        <Label layoutX="10.0" layoutY="78.0" text="Label" />
+                        <ProgressBar layoutX="10.0" layoutY="166.0" prefWidth="200.0" progress="0.0" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="400.0" prefWidth="190.0">
+                     <children>
+                        <Label text="HOBBIES" />
+                        <HBox prefHeight="100.0" prefWidth="190.0" />
+                        <HBox layoutX="10.0" layoutY="27.0" prefHeight="100.0" prefWidth="200.0" />
+                        <HBox layoutX="10.0" layoutY="93.0" prefHeight="100.0" prefWidth="200.0" />
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+            <VBox prefHeight="640.0" prefWidth="364.0" />
+         </children>
+      </HBox>
+      <HBox fx:id="userSummary" layoutX="34.0" layoutY="32.0" prefHeight="198.0" prefWidth="491.0">
+         <children>
+            <AnchorPane prefHeight="124.0" prefWidth="136.0">
+               <children>
+                  <StackPane fx:id="imageStackPane" prefHeight="150.0" prefWidth="150.0" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="30.0">
+                     <children>
+                        <Circle radius="55.0" stroke="BLACK" strokeType="INSIDE" />
+                     </children>
+                  </StackPane>
+               </children>
+            </AnchorPane>
+            <VBox prefHeight="158.0" prefWidth="300.0">
+               <children>
+                  <Label fx:id="titleName" prefHeight="39.0" prefWidth="278.0" text="ISAAC ANEEK SARKER">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="15.0" top="15.0" />
+                     </padding>
+                  </Label>
+                  <HBox alignment="CENTER_LEFT" prefHeight="46.0" prefWidth="278.0">
+                     <children>
+                        <ImageView fitHeight="14.0" fitWidth="14.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../material_icons/mail_16dp_E3E3E3_FILL1_wght400_GRAD0_opsz20.png" />
+                           </image>
+                        </ImageView>
+                        <Label text="alvasaker2004@gmail.com" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="14.0" fitWidth="14.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../material_icons/call_16dp_E3E3E3_FILL1_wght400_GRAD0_opsz20.png" />
+                           </image>
+                        </ImageView>
+                        <Label text="01525304728" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="14.0" fitWidth="14.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../material_icons/home_and_garden_16dp_E3E3E3_FILL1_wght400_GRAD0_opsz20.png" />
+                           </image>
+                        </ImageView>
+                        <Label text="1/1, Farid shah road, Jhiltuly, Faridpur" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="14.0" fitWidth="14.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../material_icons/flag_16dp_E3E3E3_FILL1_wght400_GRAD0_opsz20.png" />
+                           </image>
+                        </ImageView>
+                        <Label text="Bangladeshi" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="14.0" fitWidth="14.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../material_icons/language_16dp_E3E3E3_FILL1_wght400_GRAD0_opsz20.png" />
+                           </image>
+                        </ImageView>
+                        <Label text="linked.in/isaacaneek" />
+                     </children>
+                     <padding>
+                        <Insets bottom="15.0" />
+                     </padding>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
 </AnchorPane>
