@@ -16,11 +16,20 @@
 VBox{
     -fx-spacing: 10;
     -fx-padding: 0;
+    -fx-alignment: CENTER_LEFT;
+}
+
+HBox{
+    -fx-spacing: 10;
 }
 
 GridPane {
     -fx-hgap: 10;
-    -fx-vgap: 10;
+    -fx-vgap: 20;
+}
+
+.text-field{
+    -fx-background-color: #dfdfe4;
 }
 
 .label{
