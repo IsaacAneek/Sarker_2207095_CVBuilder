@@ -1,5 +1,6 @@
 .root{
-
+    -fx-font-smoothing-type: gray;
+    -fx-font-family: Poppins, sans-serif;
 }
 
 @font-face {
@@ -24,7 +25,6 @@
 }
 
 .label{
-    -fx-font-family: 'Poppins', sans-serif;
     -fx-text-fill: white;
     -fx-font-weight: 0;
 }
@@ -35,4 +35,42 @@
 
 HBox{
     -fx-spacing: 3px;
+}
+
+#vboxHobbies{
+    -fx-font-size: 12px;
+    -fx-padding: 0 0 0 30;
+}
+
+#vboxSkills{
+    -fx-font-size: 12px;
+    -fx-padding: 0 30 0 30;
+}
+
+.progress-bar{
+    -fx-min-width: 100;
+    -fx-control-inner-background: #282831;
+    -fx-border-width: 0px;
+    -fx-border-radius: 0px;
+    -fx-padding: 0 0 10 0;
+    -fx-border-color: transparent;
+
+}
+
+.progress-bar .bar{
+    /*-fx-background-insets: 3 3 4 3;*/
+    /*-fx-background-radius: 0.583em; */
+    -fx-background-radius: 0;
+    -fx-padding: 6 0 6 0;
+
+}
+
+#labelHobbies{
+    -fx-font-size: 17px;
+    -fx-text-fill: #999999;
+}
+
+#labelSkills{
+    -fx-font-size: 17px;
+    -fx-text-fill: #999999;
 }

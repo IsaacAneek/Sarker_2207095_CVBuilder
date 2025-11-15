@@ -10,49 +10,68 @@
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
 
-<AnchorPane prefHeight="640.0" prefWidth="560.0" stylesheets="@../../../styles/preview.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cvbuilder.previewController">
+<AnchorPane prefHeight="680.0" prefWidth="560.0" stylesheets="@../../../styles/preview.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cvbuilder.previewController">
    <children>
-      <HBox layoutY="-1.0" prefHeight="640.0" prefWidth="560.0">
+      <HBox layoutY="-1.0" prefHeight="686.0" prefWidth="560.0">
          <children>
-            <VBox prefHeight="640.0" prefWidth="190.0" style="-fx-background-color: black;">
+            <VBox prefHeight="640.0" prefWidth="190.0" style="-fx-background-color: #282831;">
                <children>
-                  <VBox prefHeight="496.0" prefWidth="190.0">
+                  <VBox fx:id="vboxSkills" prefHeight="420.0" prefWidth="190.0">
                      <VBox.margin>
                         <Insets top="300.0" />
                      </VBox.margin>
                      <children>
-                        <Label text="SKILLS" />
-                        <Label text="Label" />
-                        <ProgressBar prefWidth="200.0" progress="0.0" />
-                        <Label layoutX="10.0" layoutY="27.0" text="Label" />
+                        <Label fx:id="labelSkills" text="SKILLS" />
+                        <Label text="Machine Learning" />
+                        <ProgressBar prefWidth="200.0" progress="0.85" />
+                        <Label layoutX="10.0" layoutY="27.0" text="Python" />
                         <ProgressBar layoutX="10.0" layoutY="44.0" prefWidth="200.0" progress="0.0" />
-                        <Label layoutX="10.0" layoutY="44.0" text="Label" />
+                        <Label layoutX="10.0" layoutY="44.0" text="Data Analysis" />
                         <ProgressBar layoutX="10.0" layoutY="130.0" prefWidth="200.0" progress="0.0" />
-                        <Label layoutX="10.0" layoutY="61.0" text="Label" />
+                        <Label layoutX="10.0" layoutY="61.0" text="Computer Vision" />
                         <ProgressBar layoutX="10.0" layoutY="148.0" prefWidth="200.0" progress="0.0" />
-                        <Label layoutX="10.0" layoutY="78.0" text="Label" />
+                        <Label layoutX="10.0" layoutY="78.0" text="Embedded Systems" />
                         <ProgressBar layoutX="10.0" layoutY="166.0" prefWidth="200.0" progress="0.0" />
                      </children>
                   </VBox>
-                  <VBox prefHeight="400.0" prefWidth="190.0">
+                  <VBox fx:id="vboxHobbies" alignment="CENTER_LEFT" prefHeight="270.0" prefWidth="190.0">
                      <children>
-                        <Label text="HOBBIES" />
-                        <HBox prefHeight="100.0" prefWidth="190.0" />
-                        <HBox layoutX="10.0" layoutY="27.0" prefHeight="100.0" prefWidth="200.0" />
-                        <HBox layoutX="10.0" layoutY="93.0" prefHeight="100.0" prefWidth="200.0" />
+                        <Label fx:id="labelHobbies" text="HOBBIES" />
+                        <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="190.0">
+                           <children>
+                              <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0095c8" height="10.0" stroke="BLACK" strokeType="INSIDE" width="10.0" />
+                              <Label text="Gaming" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="27.0" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0095c8" height="10.0" stroke="BLACK" strokeType="INSIDE" width="10.0" />
+                              <Label text="Reading" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="93.0" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0095c8" height="10.0" stroke="BLACK" strokeType="INSIDE" width="10.0" />
+                              <Label text="Travelling" />
+                           </children>
+                        </HBox>
                      </children>
+                     <VBox.margin>
+                        <Insets bottom="40.0" />
+                     </VBox.margin>
                   </VBox>
                </children>
             </VBox>
-            <VBox prefHeight="640.0" prefWidth="364.0" />
+            <VBox prefHeight="640.0" prefWidth="364.0" snapToPixel="false" />
          </children>
       </HBox>
-      <HBox fx:id="userSummary" layoutX="34.0" layoutY="32.0" prefHeight="198.0" prefWidth="491.0">
+      <HBox fx:id="userSummary" layoutX="29.0" layoutY="32.0" prefHeight="198.0" prefWidth="496.0">
          <children>
-            <AnchorPane prefHeight="124.0" prefWidth="136.0">
+            <AnchorPane prefHeight="124.0" prefWidth="157.0">
                <children>
                   <StackPane fx:id="imageStackPane" prefHeight="150.0" prefWidth="150.0" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="30.0">
                      <children>
