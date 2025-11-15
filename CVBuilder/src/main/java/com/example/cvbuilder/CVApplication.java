@@ -10,8 +10,10 @@ import java.io.IOException;
 public class CVApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("home.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("create.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 480, 640);
+        String css = this.getClass().getResource("/styles/create.css").toExternalForm();
+        scene.getStylesheets().add(css);
         stage.setTitle("Hello!");
         stage.setResizable(false);
         stage.setScene(scene);
