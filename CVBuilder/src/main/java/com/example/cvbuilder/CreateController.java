@@ -6,6 +6,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
@@ -32,10 +33,17 @@ public class CreateController {
     @FXML TextField textFieldSkill3;
     @FXML TextField textFieldWorkCity;
 
+    @FXML ChoiceBox<String> choiceBoxSkillLevel1;
+    @FXML ChoiceBox<String> choiceBoxSkillLevel2;
+    @FXML ChoiceBox<String> choiceBoxSkillLevel3;
+
     private CreateModel model;
 
     @FXML
     void initialize() {
+        choiceBoxSkillLevel1.getItems().addAll("Beginner", "Moderate", "Good", "Very Good", "Excellent");
+        choiceBoxSkillLevel2.getItems().addAll("Beginner", "Moderate", "Good", "Very Good", "Excellent");
+        choiceBoxSkillLevel3.getItems().addAll("Beginner", "Moderate", "Good", "Very Good", "Excellent");
     }
 
     @FXML
@@ -46,6 +54,9 @@ public class CreateController {
         model.textFieldName = textFieldName.getText();
         model.textFieldDesiredJobPosition = textFieldDesiredJobPosition.getText();
         model.textFieldFamilyName = textFieldFamilyName.getText();
+        model.skillLevel1 = (double) (choiceBoxSkillLevel1.getSelectionModel().getSelectedIndex() + 1) / 5;
+        model.skillLevel2 = (double) (choiceBoxSkillLevel2.getSelectionModel().getSelectedIndex() + 1) / 5;
+        model.skillLevel3 = (double) (choiceBoxSkillLevel3.getSelectionModel().getSelectedIndex() + 1) / 5;
 
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("preview.fxml"));
         Parent root = fxmlLoader.load();

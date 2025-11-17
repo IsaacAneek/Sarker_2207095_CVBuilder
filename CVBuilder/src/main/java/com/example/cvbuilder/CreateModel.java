@@ -21,4 +21,8 @@ public class CreateModel {
     public String textFieldSkill2;
     public String textFieldSkill3;
     public String textFieldWorkCity;
+
+    public double skillLevel1;
+    public double skillLevel2;
+    public double skillLevel3;
 }

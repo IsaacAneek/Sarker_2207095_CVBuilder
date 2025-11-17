@@ -2,6 +2,7 @@ package com.example.cvbuilder;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
+import javafx.scene.control.ProgressBar;
 import javafx.scene.control.TextField;
 
 public class PreviewController {
@@ -21,6 +22,9 @@ public class PreviewController {
     @FXML Label labelSkill3;
     @FXML Label labelWorkCity;
 
+    @FXML ProgressBar barSkill1;
+    @FXML ProgressBar barSkill2;
+    @FXML ProgressBar barSkill3;
 
     private CreateModel model;
 
@@ -28,6 +32,9 @@ public class PreviewController {
         this.model = model;
         titleName.setText(model.textFieldName);
         labelEmail.setText(model.textFieldDesiredJobPosition);
+        barSkill1.setProgress(model.skillLevel1);
+        barSkill2.setProgress(model.skillLevel2);
+        barSkill3.setProgress(model.skillLevel3);
     }
 
     @FXML

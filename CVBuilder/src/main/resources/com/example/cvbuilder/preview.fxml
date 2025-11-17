@@ -27,11 +27,11 @@
                      <children>
                         <Label fx:id="labelSkills" text="SKILLS" />
                         <Label fx:id="labelSkill1" text="Machine Learning" />
-                        <ProgressBar prefWidth="200.0" progress="0.72" />
+                        <ProgressBar fx:id="barSkill1" prefWidth="200.0" progress="0.72" />
                         <Label fx:id="labelSkill2" layoutX="10.0" layoutY="27.0" text="Python" />
-                        <ProgressBar layoutX="10.0" layoutY="44.0" prefWidth="200.0" progress="0.52" />
+                        <ProgressBar fx:id="barSkill2" layoutX="10.0" layoutY="44.0" prefWidth="200.0" progress="0.52" />
                         <Label fx:id="labelSkill3" layoutX="10.0" layoutY="44.0" text="Data Analysis" />
-                        <ProgressBar layoutX="10.0" layoutY="130.0" prefWidth="200.0" progress="0.32" />
+                        <ProgressBar fx:id="barSkill3" layoutX="10.0" layoutY="130.0" prefWidth="200.0" progress="0.32" />
                      </children>
                   </VBox>
                   <VBox fx:id="vboxHobbies" alignment="CENTER_LEFT" prefHeight="260.0" prefWidth="190.0">
