@@ -14,7 +14,7 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="680.0" prefWidth="560.0" stylesheets="@../../../styles/preview.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cvbuilder.previewController">
+<AnchorPane prefHeight="680.0" prefWidth="560.0" stylesheets="@../../../styles/preview.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cvbuilder.PreviewController">
    <children>
       <HBox layoutY="-1.0" prefHeight="686.0" prefWidth="560.0">
          <children>
@@ -38,7 +38,7 @@
                         <ProgressBar layoutX="10.0" layoutY="166.0" prefWidth="200.0" progress="0.67" />
                      </children>
                   </VBox>
-                  <VBox fx:id="vboxHobbies" alignment="CENTER_LEFT" prefHeight="270.0" prefWidth="190.0">
+                  <VBox fx:id="vboxHobbies" alignment="CENTER_LEFT" prefHeight="260.0" prefWidth="190.0">
                      <children>
                         <Label fx:id="labelHobbies" text="HOBBIES" />
                         <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="190.0">
@@ -61,7 +61,7 @@
                         </HBox>
                      </children>
                      <VBox.margin>
-                        <Insets bottom="40.0" />
+                        <Insets bottom="70.0" />
                      </VBox.margin>
                   </VBox>
                </children>
@@ -82,23 +82,26 @@
                         <VBox layoutX="10.0" layoutY="10.0" prefHeight="90.0" prefWidth="344.0">
                            <children>
                               <Label fx:id="userDetailsTitleLabel" text="EDUCATION" />
-                              <Label layoutX="10.0" layoutY="10.0" style="-fx-background-color: #f4f4f4; -fx-text-fill: black;" text="B.S.c (Engr.) in Computer Science and Engineering" />
+                              <Label layoutX="10.0" layoutY="10.0" style="-fx-background-color: #f4f4f4; -fx-text-fill: black; -fx-font-weight: bold;" text="B.S.c (Engr.) in Computer Science and Engineering" />
                               <Label layoutX="10.0" layoutY="29.0" style="-fx-background-color: #f4f4f4; -fx-text-fill: black;" text="Khulna University of Engineering and Technology, Khulna" />
                            </children>
                         </VBox>
                         <VBox layoutX="10.0" layoutY="210.0" prefHeight="200.0" prefWidth="100.0">
                            <children>
-                              <Label fx:id="userDetailsTitleLabel" text="EMPLOYMENT" />
-                              <Label style="-fx-background-color: #f4f4f4; -fx-text-fill: black;" text="Junior Data Scientist" />
+                              <Label fx:id="userDetailsTitleLabel" text="WORK EXPERIENCE" />
+                              <Label style="-fx-background-color: #f4f4f4; -fx-text-fill: black; -fx-font-weight: bold;" text="Junior Data Scientist" />
                               <Label style="-fx-background-color: #f4f4f4; -fx-text-fill: black;" text="Mavrin Inc., Havoic" />
                               <TextArea editable="false" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #f4f4f4;" text="Lorem Ipsum 1&#10;Lorem Ipsum 2&#10;Lorem Ipsum 3&#10;Lorem Ipsum 3&#10;Lorem Ipsum 3&#10;Lorem Ipsum 3" />
                            </children>
                         </VBox>
                         <VBox layoutX="10.0" layoutY="287.0" prefHeight="200.0" prefWidth="100.0">
                            <children>
-                              <Label fx:id="userDetailsTitleLabel" text="EXTRACURRICULAR ACTIVITIES" />
-                              <VBox prefHeight="200.0" prefWidth="100.0" />
-                              <VBox layoutX="10.0" layoutY="29.0" prefHeight="200.0" prefWidth="100.0" />
+                              <Label fx:id="userDetailsTitleLabel" text="PROJECTS" />
+                              <VBox prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                    <Label style="-fx-background-color: #f4f4f4; -fx-text-fill: black; -fx-font-weight: bold;" text="Junior Data Scientist" />
+                                    <TextArea editable="false" prefHeight="64.0" prefWidth="330.0" style="-fx-background-color: #f4f4f4;" text="Lorem Ipsum 1&#10;Lorem Ipsum 2&#10;Lorem Ipsum 3&#10;Lorem Ipsum 3&#10;Lorem Ipsum 3&#10;Lorem Ipsum 3" />
+                                 </children></VBox>
                            </children>
                         </VBox>
                      </children>
@@ -107,7 +110,7 @@
             </VBox>
          </children>
       </HBox>
-      <HBox fx:id="userSummary" layoutX="29.0" layoutY="32.0" prefHeight="198.0" prefWidth="504.0">
+      <HBox fx:id="userSummary" layoutX="29.0" layoutY="32.0" prefHeight="192.0" prefWidth="504.0">
          <children>
             <AnchorPane prefHeight="124.0" prefWidth="157.0">
                <children>
@@ -135,7 +138,7 @@
                               <Image url="@../../../material_icons/mail_16dp_E3E3E3_FILL1_wght400_GRAD0_opsz20.png" />
                            </image>
                         </ImageView>
-                        <Label text="alvasaker2004@gmail.com" />
+                        <Label fx:id="labelEmail" text="alvasaker2004@gmail.com" />
                      </children>
                   </HBox>
                   <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">

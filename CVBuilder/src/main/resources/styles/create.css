@@ -64,6 +64,30 @@ ImageViewer{
     -fx-background-radius: 2;
 }
 
+.button{
+    -fx-border-radius: 0em;
+    -fx-background-radius: 0em;
+    -fx-background-color: #2f709f;
+    -fx-font-size: 15;
+    -fx-text-fill: white;
+}
+
+.button:hover{
+    -fx-border-radius: 0em;
+    -fx-background-radius: 0em;
+    -fx-background-color: #418abf;
+    -fx-font-size: 15;
+    -fx-text-fill: white;
+}
+
+.button:pressed{
+    -fx-border-radius: 0em;
+    -fx-background-radius: 0em;
+    -fx-background-color: #1f608f;
+    -fx-font-size: 15;
+    -fx-text-fill: white;
+}
+
 #title{
     -fx-font-size: 25;
 }
