@@ -13,9 +13,24 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 public class CreateController {
-    @FXML private TextField textFieldName;
-    @FXML private TextField textFieldFamilyName;
-    @FXML private TextField textFieldDesiredJobPosition;
+    @FXML TextField textFieldName;
+    @FXML TextField textFieldFamilyName;
+    @FXML TextField textFieldDesiredJobPosition;
+    @FXML TextField textFieldAddress;
+    @FXML TextField textFieldCity;
+    @FXML TextField textFieldEducation;
+    @FXML TextField textFieldEmailAddress;
+    @FXML TextField textFieldEmployer;
+    @FXML TextField textFieldGender;
+    @FXML TextField textFieldLinkedIn;
+    @FXML TextField textFieldNationality;
+    @FXML TextField textFieldPhoneNumber;
+    @FXML TextField textFieldPosition;
+    @FXML TextField textFieldSchool;
+    @FXML TextField textFieldSkill1;
+    @FXML TextField textFieldSkill2;
+    @FXML TextField textFieldSkill3;
+    @FXML TextField textFieldWorkCity;
 
     private CreateModel model;
 
@@ -28,9 +43,9 @@ public class CreateController {
 
         System.out.println("Generate button clicked");
         model = new CreateModel();
-        model.name = textFieldName.getText();
-        model.desiredJobPosition = textFieldDesiredJobPosition.getText();
-        model.familyName = textFieldFamilyName.getText();
+        model.textFieldName = textFieldName.getText();
+        model.textFieldDesiredJobPosition = textFieldDesiredJobPosition.getText();
+        model.textFieldFamilyName = textFieldFamilyName.getText();
 
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("preview.fxml"));
         Parent root = fxmlLoader.load();

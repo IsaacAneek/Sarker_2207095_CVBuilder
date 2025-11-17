@@ -16,7 +16,7 @@
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="560.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cvbuilder.CreateController">
    <right>
-      <ScrollPane fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" pannable="true" prefHeight="680.0" prefWidth="565.0" stylesheets="@../../../styles/create.css" vvalue="1.0" BorderPane.alignment="CENTER">
+      <ScrollPane fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" pannable="true" prefHeight="680.0" prefWidth="565.0" stylesheets="@../../../styles/create.css" BorderPane.alignment="CENTER">
          <content>
             <VBox prefWidth="405.0">
                <children>
@@ -72,13 +72,13 @@
                         <VBox prefHeight="200.0" prefWidth="100.0">
                            <children>
                               <Label text="Email address" />
-                              <TextField />
+                              <TextField fx:id="textFieldEmailAddress" />
                            </children>
                         </VBox>
                         <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1">
                            <children>
                               <Label text="Phone number" />
-                              <TextField />
+                              <TextField fx:id="textFieldPhoneNumber" />
                            </children>
                         </VBox>
                      </children>
@@ -86,24 +86,24 @@
                   <VBox prefHeight="16.0" prefWidth="480.0">
                      <children>
                         <Label text="Address" />
-                        <TextField />
+                        <TextField fx:id="textFieldAddress" />
                      </children>
                   </VBox>
                   <VBox prefHeight="112.0" prefWidth="480.0">
                      <children>
                         <Label text="Gender" />
-                        <TextField />
+                        <TextField fx:id="textFieldGender" />
                         <Label text="Nationallity" />
-                        <TextField />
+                        <TextField fx:id="textFieldNationality" />
                         <Label text="LinkedIn" />
-                        <TextField />
+                        <TextField fx:id="textFieldLinkedIn" />
                      </children>
                   </VBox>
                   <VBox prefHeight="30.0" prefWidth="480.0">
                      <children>
                         <Label fx:id="title" text="Profile" />
                         <Label text="Description" />
-                        <TextArea prefHeight="200.0" prefWidth="407.0" VBox.vgrow="ALWAYS" />
+                        <TextArea fx:id="textAreaProfileDescription" prefHeight="200.0" prefWidth="407.0" VBox.vgrow="ALWAYS" />
                      </children>
                   </VBox>
                   <VBox prefHeight="279.0" prefWidth="407.0">
@@ -112,7 +112,7 @@
                         <VBox prefHeight="124.0" prefWidth="407.0">
                            <children>
                               <Label text="Education" />
-                              <TextField />
+                              <TextField fx:id="textFieldEducation" />
                            </children>
                         </VBox>
                         <GridPane minHeight="125.0" prefHeight="78.0" prefWidth="405.0">
@@ -128,13 +128,13 @@
                               <VBox prefHeight="200.0" prefWidth="100.0">
                                  <children>
                                     <Label text="School" />
-                                    <TextField />
+                                    <TextField fx:id="textFieldSchool" />
                                  </children>
                               </VBox>
                               <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1">
                                  <children>
                                     <Label text="City" />
-                                    <TextField />
+                                    <TextField fx:id="textFieldCity" />
                                  </children>
                               </VBox>
                               <VBox prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="1">
@@ -164,7 +164,7 @@
                         <VBox prefHeight="83.0" prefWidth="407.0">
                            <children>
                               <Label text="Description" />
-                              <TextArea prefHeight="200.0" prefWidth="200.0" />
+                              <TextArea fx:id="textAreaEducationDescription" prefHeight="200.0" prefWidth="200.0" />
                            </children>
                         </VBox>
                      </children>
@@ -175,7 +175,7 @@
                         <VBox prefHeight="124.0" prefWidth="407.0">
                            <children>
                               <Label text="Position" />
-                              <TextField />
+                              <TextField fx:id="textFieldPosition" />
                            </children>
                         </VBox>
                         <GridPane minHeight="125.0" prefHeight="78.0" prefWidth="405.0">
@@ -191,13 +191,13 @@
                               <VBox prefHeight="200.0" prefWidth="100.0">
                                  <children>
                                     <Label text="Employer" />
-                                    <TextField />
+                                    <TextField fx:id="textFieldEmployer" />
                                  </children>
                               </VBox>
                               <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1">
                                  <children>
                                     <Label text="City" />
-                                    <TextField />
+                                    <TextField fx:id="textFieldWorkCity" />
                                  </children>
                               </VBox>
                               <VBox prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="1">
@@ -249,37 +249,37 @@
                               <VBox prefHeight="200.0" prefWidth="100.0">
                                  <children>
                                     <Label text="Skill" />
-                                    <TextField />
+                                    <TextField fx:id="textFieldSkill1" />
                                  </children>
                               </VBox>
                               <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1">
                                  <children>
                                     <Label text="Level" />
-                                    <ChoiceBox prefHeight="25.0" prefWidth="257.0" />
+                                    <ChoiceBox fx:id="choiceBoxSkillLevel1" prefHeight="25.0" prefWidth="257.0" />
                                  </children>
                               </VBox>
                               <VBox layoutX="259.0" layoutY="14.0" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
                                  <children>
                                     <Label text="Level" />
-                                    <ChoiceBox prefHeight="25.0" prefWidth="257.0" />
+                                    <ChoiceBox fx:id="choiceBoxSkillLevel2" prefHeight="25.0" prefWidth="257.0" />
                                  </children>
                               </VBox>
                               <VBox layoutX="10.0" layoutY="14.0" prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="1">
                                  <children>
                                     <Label text="Skill" />
-                                    <TextField />
+                                    <TextField fx:id="textFieldSkill2" />
                                  </children>
                               </VBox>
                               <VBox layoutX="259.0" layoutY="44.0" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
                                  <children>
                                     <Label text="Level" />
-                                    <ChoiceBox prefHeight="25.0" prefWidth="257.0" />
+                                    <ChoiceBox fx:id="choiceBoxSkillLevel3" prefHeight="25.0" prefWidth="257.0" />
                                  </children>
                               </VBox>
                               <VBox layoutX="10.0" layoutY="44.0" prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="2">
                                  <children>
                                     <Label text="Skill" />
-                                    <TextField />
+                                    <TextField fx:id="textFieldSkill3" />
                                  </children>
                               </VBox>
                            </children>
