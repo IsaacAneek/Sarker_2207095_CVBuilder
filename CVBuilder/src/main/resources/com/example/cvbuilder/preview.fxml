@@ -26,16 +26,12 @@
                      </VBox.margin>
                      <children>
                         <Label fx:id="labelSkills" text="SKILLS" />
-                        <Label text="Machine Learning" />
+                        <Label fx:id="labelSkill1" text="Machine Learning" />
                         <ProgressBar prefWidth="200.0" progress="0.72" />
-                        <Label layoutX="10.0" layoutY="27.0" text="Python" />
+                        <Label fx:id="labelSkill2" layoutX="10.0" layoutY="27.0" text="Python" />
                         <ProgressBar layoutX="10.0" layoutY="44.0" prefWidth="200.0" progress="0.52" />
-                        <Label layoutX="10.0" layoutY="44.0" text="Data Analysis" />
+                        <Label fx:id="labelSkill3" layoutX="10.0" layoutY="44.0" text="Data Analysis" />
                         <ProgressBar layoutX="10.0" layoutY="130.0" prefWidth="200.0" progress="0.32" />
-                        <Label layoutX="10.0" layoutY="61.0" text="Computer Vision" />
-                        <ProgressBar layoutX="10.0" layoutY="148.0" prefWidth="200.0" progress="0.68" />
-                        <Label layoutX="10.0" layoutY="78.0" text="Embedded Systems" />
-                        <ProgressBar layoutX="10.0" layoutY="166.0" prefWidth="200.0" progress="0.67" />
                      </children>
                   </VBox>
                   <VBox fx:id="vboxHobbies" alignment="CENTER_LEFT" prefHeight="260.0" prefWidth="190.0">
@@ -82,15 +78,15 @@
                         <VBox layoutX="10.0" layoutY="10.0" prefHeight="90.0" prefWidth="344.0">
                            <children>
                               <Label fx:id="userDetailsTitleLabel" text="EDUCATION" />
-                              <Label layoutX="10.0" layoutY="10.0" style="-fx-background-color: #f4f4f4; -fx-text-fill: black; -fx-font-weight: bold;" text="B.S.c (Engr.) in Computer Science and Engineering" />
-                              <Label layoutX="10.0" layoutY="29.0" style="-fx-background-color: #f4f4f4; -fx-text-fill: black;" text="Khulna University of Engineering and Technology, Khulna" />
+                              <Label fx:id="labelEducation" layoutX="10.0" layoutY="10.0" style="-fx-background-color: #f4f4f4; -fx-text-fill: black; -fx-font-weight: bold;" text="B.S.c (Engr.) in Computer Science and Engineering" />
+                              <Label fx:id="labelSchool" layoutX="10.0" layoutY="29.0" style="-fx-background-color: #f4f4f4; -fx-text-fill: black;" text="Khulna University of Engineering and Technology, Khulna" />
                            </children>
                         </VBox>
                         <VBox layoutX="10.0" layoutY="210.0" prefHeight="200.0" prefWidth="100.0">
                            <children>
                               <Label fx:id="userDetailsTitleLabel" text="WORK EXPERIENCE" />
-                              <Label style="-fx-background-color: #f4f4f4; -fx-text-fill: black; -fx-font-weight: bold;" text="Junior Data Scientist" />
-                              <Label style="-fx-background-color: #f4f4f4; -fx-text-fill: black;" text="Mavrin Inc., Havoic" />
+                              <Label fx:id="labelPosition" style="-fx-background-color: #f4f4f4; -fx-text-fill: black; -fx-font-weight: bold;" text="Junior Data Scientist" />
+                              <Label fx:id="labelWorkCity" style="-fx-background-color: #f4f4f4; -fx-text-fill: black;" text="Mavrin Inc., Havoic" />
                               <TextArea editable="false" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #f4f4f4;" text="Lorem Ipsum 1&#10;Lorem Ipsum 2&#10;Lorem Ipsum 3&#10;Lorem Ipsum 3&#10;Lorem Ipsum 3&#10;Lorem Ipsum 3" />
                            </children>
                         </VBox>
@@ -148,7 +144,7 @@
                               <Image url="@../../../material_icons/call_16dp_E3E3E3_FILL1_wght400_GRAD0_opsz20.png" />
                            </image>
                         </ImageView>
-                        <Label text="01525304728" />
+                        <Label fx:id="labelPhoneNumber" text="01525304728" />
                      </children>
                   </HBox>
                   <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
@@ -158,7 +154,7 @@
                               <Image url="@../../../material_icons/home_and_garden_16dp_E3E3E3_FILL1_wght400_GRAD0_opsz20.png" />
                            </image>
                         </ImageView>
-                        <Label text="1/1, Farid shah road, Jhiltuly, Faridpur" />
+                        <Label fx:id="labelAddress" text="1/1, Farid shah road, Jhiltuly, Faridpur" />
                      </children>
                   </HBox>
                   <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
@@ -168,7 +164,7 @@
                               <Image url="@../../../material_icons/flag_16dp_E3E3E3_FILL1_wght400_GRAD0_opsz20.png" />
                            </image>
                         </ImageView>
-                        <Label text="Bangladeshi" />
+                        <Label fx:id="labelNationality" text="Bangladeshi" />
                      </children>
                   </HBox>
                   <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
@@ -178,7 +174,7 @@
                               <Image url="@../../../material_icons/language_16dp_E3E3E3_FILL1_wght400_GRAD0_opsz20.png" />
                            </image>
                         </ImageView>
-                        <Label text="linked.in/isaacaneek" />
+                        <Label fx:id="labelLinkedIn" text="linked.in/isaacaneek" />
                      </children>
                      <padding>
                         <Insets bottom="15.0" />
