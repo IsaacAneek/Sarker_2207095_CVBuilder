@@ -11,11 +11,11 @@ public class CVApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         System.setProperty("prism.lcdtext", "false");
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("create.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("home.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 560, 680);
         //String css = this.getClass().getResource("/styles/create.css").toExternalForm();
         //scene.getStylesheets().add(css);
-        stage.setTitle("Hello!");
+        stage.setTitle("CVBuilder");
         stage.setResizable(false);
         stage.setScene(scene);
         stage.show();

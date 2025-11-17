@@ -4,15 +4,21 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Polygon?>
 
-
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="480.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cvbuilder.homeController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="560.0" stylesheets="@../../../styles/home.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cvbuilder.HomeController">
    <center>
-      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="15.0" BorderPane.alignment="CENTER">
          <children>
-            <Label alignment="CENTER" contentDisplay="CENTER" text="Welcome to CVBuilder! Click &quot;Create New CV&quot; to continue." />
-            <Button mnemonicParsing="false" text="Create New CV" />
+            <Label fx:id="titleHome" alignment="CENTER" contentDisplay="CENTER" text="Welcome to CVBuilder! Click &quot;Create New CV&quot; to continue." />
+            <Button fx:id="createButton" mnemonicParsing="false" onAction="#onCreateButtonClicked" text="Create New CV" />
          </children>
       </VBox>
    </center>
+   <bottom>
+      <Polygon fill="DODGERBLUE" points="-511.0, -401.0, 50.0, -225.0, -511.0, -225.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" BorderPane.alignment="CENTER" />
+   </bottom>
+   <top>
+      <Polygon fill="DODGERBLUE" points="-510.0, -393.0, 50.0, -225.0, 50.0, -393.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" BorderPane.alignment="CENTER" />
+   </top>
 </BorderPane>

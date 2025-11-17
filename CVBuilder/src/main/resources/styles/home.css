@@ -1,0 +1,44 @@
+.root{
+    -fx-font-family: Poppins;
+    -fx-font-smoothing-type: gray;
+}
+
+.button{
+    -fx-border-radius: 0em;
+    -fx-background-radius: 0em;
+    -fx-background-color: #2f709f;
+    -fx-font-size: 15;
+    -fx-text-fill: white;
+}
+
+.button:hover{
+    -fx-border-radius: 0em;
+    -fx-background-radius: 0em;
+    -fx-background-color: #418abf;
+    -fx-font-size: 15;
+    -fx-text-fill: white;
+}
+
+.button:pressed{
+    -fx-border-radius: 0em;
+    -fx-background-radius: 0em;
+    -fx-background-color: #1f608f;
+    -fx-font-size: 15;
+    -fx-text-fill: white;
+}
+
+#titleHome{
+    -fx-font-size: 18;
+}
+
+Vbox{
+    -fx-spacing: 20;
+}
+
+Polygon{
+    stroke-width: 0px;
+    -fx-fill:  #282831;
+}
+
+.label{
+}
