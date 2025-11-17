@@ -14,7 +14,6 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="680.0" prefWidth="560.0" stylesheets="@../../../styles/preview.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cvbuilder.previewController">
    <children>
       <HBox layoutY="-1.0" prefHeight="686.0" prefWidth="560.0">
@@ -76,28 +75,28 @@
                      <children>
                         <VBox prefHeight="200.0" prefWidth="100.0">
                            <children>
-                              <Label text="PROFILE" />
-                              <TextArea prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #f4f4f4;" text="Resourceful Machine Learning Engineer with a solid foundation in computer science and engineering, coupled with practical experience as a Junior Data Scientist. Adept at designing and implementing innovative algorithms to solve complex data-driven problems, with a strong commitment to continual learning and professional growth." wrapText="true" />
+                              <Label fx:id="userDetailsTitleLabel" text="PROFILE" />
+                              <TextArea editable="false" prefHeight="100.0" prefWidth="338.0" style="-fx-background-color: #f4f4f4;" text="Resourceful Machine Learning Engineer with a solid foundation in computer science and engineering, coupled with practical experience as a Junior Data Scientist. Adept at designing and implementing innovative algorithms to solve complex data-driven problems, with a strong commitment to continual learning and professional growth." wrapText="true" />
                            </children>
                         </VBox>
                         <VBox layoutX="10.0" layoutY="10.0" prefHeight="90.0" prefWidth="344.0">
                            <children>
-                              <Label text="EDUCATION" />
+                              <Label fx:id="userDetailsTitleLabel" text="EDUCATION" />
                               <Label layoutX="10.0" layoutY="10.0" style="-fx-background-color: #f4f4f4; -fx-text-fill: black;" text="B.S.c (Engr.) in Computer Science and Engineering" />
                               <Label layoutX="10.0" layoutY="29.0" style="-fx-background-color: #f4f4f4; -fx-text-fill: black;" text="Khulna University of Engineering and Technology, Khulna" />
                            </children>
                         </VBox>
                         <VBox layoutX="10.0" layoutY="210.0" prefHeight="200.0" prefWidth="100.0">
                            <children>
-                              <Label text="EMPLOYMENT" />
+                              <Label fx:id="userDetailsTitleLabel" text="EMPLOYMENT" />
                               <Label style="-fx-background-color: #f4f4f4; -fx-text-fill: black;" text="Junior Data Scientist" />
                               <Label style="-fx-background-color: #f4f4f4; -fx-text-fill: black;" text="Mavrin Inc., Havoic" />
-                              <TextArea prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #f4f4f4;" text="Lorem Ipsum 1&#10;Lorem Ipsum 2&#10;Lorem Ipsum 3" />
+                              <TextArea editable="false" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #f4f4f4;" text="Lorem Ipsum 1&#10;Lorem Ipsum 2&#10;Lorem Ipsum 3&#10;Lorem Ipsum 3&#10;Lorem Ipsum 3&#10;Lorem Ipsum 3" />
                            </children>
                         </VBox>
                         <VBox layoutX="10.0" layoutY="287.0" prefHeight="200.0" prefWidth="100.0">
                            <children>
-                              <Label text="EXTRACURRICULAR ACTIVITIES" />
+                              <Label fx:id="userDetailsTitleLabel" text="EXTRACURRICULAR ACTIVITIES" />
                               <VBox prefHeight="200.0" prefWidth="100.0" />
                               <VBox layoutX="10.0" layoutY="29.0" prefHeight="200.0" prefWidth="100.0" />
                            </children>

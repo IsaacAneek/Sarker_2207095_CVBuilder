@@ -16,7 +16,7 @@ public class HomeController {
 
     @FXML
     public void onCreateButtonClicked(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("create.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("preview.fxml"));
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         stage.setScene(new Scene(root, 560, 680));
     }

@@ -20,7 +20,7 @@
 #userSummary{
     -fx-background-color: #2f709f;
     -fx-border-color: white;
-    -fx-border-width: 10px;
+    -fx-border-width: 7px;
     -fx-border-style: solid;
 }
 
@@ -44,13 +44,18 @@ HBox{
 
 #vboxSkills{
     -fx-font-size: 12px;
-    -fx-padding: 0 30 0 30;
+    -fx-padding: 0 20 0 30;
 }
 
-#vboxUserDetails .label{
+#vboxUserDetails{
+    -fx-spacing: 7px;
+}
+
+#userDetailsTitleLabel{
     -fx-background-color: #2f709f;
-    -fx-font-size: 13px;
+    -fx-font-size: 14px;
     -fx-padding: 0 4 0 4;
+    -fx-font-weight: 600;
 }
 
 #vboxUserDetails{
@@ -72,8 +77,9 @@ HBox{
     /*-fx-background-radius: 0.583em; */
     -fx-background-radius: 0;
     -fx-padding: 6 0 6 0;
-
 }
+
+
 
 #labelHobbies{
     -fx-font-size: 17px;
@@ -83,4 +89,16 @@ HBox{
 #labelSkills{
     -fx-font-size: 17px;
     -fx-text-fill: #999999;
+}
+
+.text-area{
+    -fx-padding: 0 -30 0 -1;
+    -fx-max-width: 330;
+    -fx-wrap-text: true;
+    -fx-editable: false;
+}
+
+.text-area .content{
+    -fx-background-color: #f2f2f2;
+    -fx-padding: 0 0 0 -0;
 }
