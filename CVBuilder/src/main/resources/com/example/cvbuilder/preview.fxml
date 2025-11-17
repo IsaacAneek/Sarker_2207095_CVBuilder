@@ -95,7 +95,7 @@
                               <Label fx:id="userDetailsTitleLabel" text="PROJECTS" />
                               <VBox prefHeight="200.0" prefWidth="100.0">
                                  <children>
-                                    <Label style="-fx-background-color: #f4f4f4; -fx-text-fill: black; -fx-font-weight: bold;" text="Junior Data Scientist" />
+                                    <Label style="-fx-background-color: #f4f4f4; -fx-text-fill: black; -fx-font-weight: bold;" text="Terrain Analyis using K-means Classifier" />
                                     <TextArea editable="false" prefHeight="64.0" prefWidth="330.0" style="-fx-background-color: #f4f4f4;" text="Lorem Ipsum 1&#10;Lorem Ipsum 2&#10;Lorem Ipsum 3&#10;Lorem Ipsum 3&#10;Lorem Ipsum 3&#10;Lorem Ipsum 3" />
                                  </children></VBox>
                            </children>
@@ -144,7 +144,7 @@
                               <Image url="@../../../material_icons/call_16dp_E3E3E3_FILL1_wght400_GRAD0_opsz20.png" />
                            </image>
                         </ImageView>
-                        <Label fx:id="labelPhoneNumber" text="01525304728" />
+                        <Label fx:id="labelPhoneNumber" text="1234567890" />
                      </children>
                   </HBox>
                   <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
@@ -154,7 +154,7 @@
                               <Image url="@../../../material_icons/home_and_garden_16dp_E3E3E3_FILL1_wght400_GRAD0_opsz20.png" />
                            </image>
                         </ImageView>
-                        <Label fx:id="labelAddress" text="1/1, Farid shah road, Jhiltuly, Faridpur" />
+                        <Label fx:id="labelAddress" text="1/1, shah road, Khulna" />
                      </children>
                   </HBox>
                   <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">

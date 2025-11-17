@@ -32,9 +32,19 @@ public class PreviewController {
         this.model = model;
         titleName.setText(model.textFieldName);
         labelEmail.setText(model.textFieldDesiredJobPosition);
+
         barSkill1.setProgress(model.skillLevel1);
         barSkill2.setProgress(model.skillLevel2);
         barSkill3.setProgress(model.skillLevel3);
+
+        labelSkill1.setText(model.textFieldSkill1);
+        labelSkill2.setText(model.textFieldSkill2);
+        labelSkill3.setText(model.textFieldSkill3);
+
+        labelPhoneNumber.setText(model.textFieldPhoneNumber);
+        labelAddress.setText(model.textFieldAddress);
+        labelNationality.setText(model.textFieldNationality);
+        labelLinkedIn.setText(model.textFieldLinkedIn);
     }
 
     @FXML

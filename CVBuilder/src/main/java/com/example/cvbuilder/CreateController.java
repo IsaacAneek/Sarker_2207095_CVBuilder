@@ -54,9 +54,18 @@ public class CreateController {
         model.textFieldName = textFieldName.getText();
         model.textFieldDesiredJobPosition = textFieldDesiredJobPosition.getText();
         model.textFieldFamilyName = textFieldFamilyName.getText();
+        model.textFieldSkill1 = textFieldSkill1.getText();
+        model.textFieldSkill2 = textFieldSkill2.getText();
+        model.textFieldSkill3 = textFieldSkill3.getText();
+
         model.skillLevel1 = (double) (choiceBoxSkillLevel1.getSelectionModel().getSelectedIndex() + 1) / 5;
         model.skillLevel2 = (double) (choiceBoxSkillLevel2.getSelectionModel().getSelectedIndex() + 1) / 5;
         model.skillLevel3 = (double) (choiceBoxSkillLevel3.getSelectionModel().getSelectedIndex() + 1) / 5;
+
+        model.textFieldPhoneNumber = textFieldPhoneNumber.getText();
+        model.textFieldAddress = textFieldAddress.getText();
+        model.textFieldLinkedIn = textFieldLinkedIn.getText();
+        model.textFieldNationality = textFieldNationality.getText();
 
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("preview.fxml"));
         Parent root = fxmlLoader.load();
