@@ -3,6 +3,7 @@ package com.example.cvbuilder;
 import javafx.fxml.FXML;
 
 import java.sql.Connection;
+import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.sql.Statement;
 
@@ -38,6 +39,22 @@ public class CreateModel {
                 "address TEXT, nationality TEXT)";
         Statement statement = connection.createStatement();
         statement.executeUpdate(create_table);
+    }
 
+    public void updateDB() {
+        if(connection != null) {
+            try{
+                String insert = "INSERT INTO cvinfo (name, family_name, desired_position, address, nationality) VALUES (?, ?, ?, ?, ?)";
+                PreparedStatement preparedStatement = connection.prepareStatement(insert);
+                preparedStatement.setString(1, textFieldName);
+                preparedStatement.setString(2, textFieldFamilyName);
+                preparedStatement.setString(3, textFieldDesiredJobPosition);
+                preparedStatement.setString(4, textFieldAddress);
+                preparedStatement.setString(5, textFieldCity);
+                preparedStatement.executeUpdate();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
     }
 }

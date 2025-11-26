@@ -68,6 +68,8 @@ public class CreateController {
         model.textFieldLinkedIn = textFieldLinkedIn.getText();
         model.textFieldNationality = textFieldNationality.getText();
 
+        model.updateDB();
+
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("preview.fxml"));
         Parent root = fxmlLoader.load();
 
