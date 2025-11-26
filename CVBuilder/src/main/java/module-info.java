@@ -13,6 +13,7 @@ module com.example.cvbuilder {
     requires javafx.graphics;
     requires java.desktop;
     requires javafx.base;
+    requires java.sql;
 
     opens com.example.cvbuilder to javafx.fxml;
     exports com.example.cvbuilder;

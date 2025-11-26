@@ -12,6 +12,7 @@ import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.sql.SQLException;
 
 public class CreateController {
     @FXML TextField textFieldName;
@@ -47,7 +48,7 @@ public class CreateController {
     }
 
     @FXML
-    void onGenerateCVClicked(ActionEvent event) throws IOException {
+    void onGenerateCVClicked(ActionEvent event) throws IOException, SQLException {
 
         System.out.println("Generate button clicked");
         model = new CreateModel();
